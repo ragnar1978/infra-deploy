@@ -1,0 +1,7 @@
+services:
+  intranet:
+    image: alpenbau/intranet:2.4
+    env_file: .env
+    ports:
+      - "8443:8443"
+    restart: unless-stopped
